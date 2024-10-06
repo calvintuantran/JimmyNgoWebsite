@@ -30,7 +30,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img
-              style={{ width: "300px", height: "auto" }}
+              style={{ maxWidth: "100%", height: "auto" }} // Responsive scaling
               alt="Logo"
               src={"images/JimmyNgoLogo.PNG"}
             />
@@ -50,6 +50,15 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
+                About Dr. Ngo
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/services"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Services
               </Link>
             </li>
@@ -59,7 +68,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Products
+                Contact Us
               </Link>
             </li>
 
@@ -68,7 +77,10 @@ function Navbar() {
             </li>
           </ul>
           {button && (
-            <Button style={{ width: "20%" }} buttonStyle="btn--outline">
+            <Button
+              style={{ width: "20%", marginRight: "1rem" }}
+              buttonStyle="btn--outline"
+            >
               Call (714) 530-8577
             </Button>
           )}

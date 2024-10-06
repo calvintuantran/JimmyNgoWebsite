@@ -12,16 +12,12 @@ function Footer() {
             <h2>About Us</h2>
             <Link to="/sign-up">How it works</Link>
             <Link to="/">Testimonials</Link>
-            <Link to="/">Careers</Link>
-            <Link to="/">Investors</Link>
             <Link to="/">Terms of Service</Link>
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
             <Link to="/">Contact</Link>
             <Link to="/">Support</Link>
-            <Link to="/">Destinations</Link>
-            <Link to="/">Sponsorships</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
@@ -31,36 +27,57 @@ function Footer() {
           </div>
           <div class="footer-link-items">
             <h2>Social Media</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Yelp</Link>
+            <a
+              className="social-icon-link"
+              href="https://www.instagram.com/jimmyngoorthodontist/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Yelp"
+            >
+              <h6>Instagram</h6>
+            </a>
+            <a
+              className="social-icon-link"
+              href="https://www.yelp.com/biz/jimmy-vu-ngo-dds-garden-grove"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Yelp"
+            >
+              <h6>Yelp</h6>
+            </a>
           </div>
         </div>
       </div>
       <section class="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            <Link to="/" className="social-logo">
-              TRVL
-              <i class="fab fa-typo3" />
+            <Link to="/" className="navbar-logo">
+              <img
+                style={{ maxWidth: "100%", height: "auto" }}
+                alt="Logo"
+                src={"images/JimmyNgoLogo.PNG"}
+              />
             </Link>
           </div>
           <div class="social-icons">
-            <Link
-              class="social-icon-link facebook"
-              to="/"
+            <a
+              className="social-icon-link"
+              href="https://www.yelp.com/biz/jimmy-vu-ngo-dds-garden-grove"
               target="_blank"
-              aria-label="Facebook"
+              rel="noopener noreferrer"
+              aria-label="Yelp"
             >
               <i class="fab fa-yelp" />
-            </Link>
-            <Link
-              class="social-icon-link instagram"
-              to="/"
+            </a>
+            <a
+              className="social-icon-link"
+              href="https://www.instagram.com/jimmyngoorthodontist/"
               target="_blank"
-              aria-label="Instagram"
+              rel="noopener noreferrer"
+              aria-label="Yelp"
             >
               <i class="fab fa-instagram" />
-            </Link>
+            </a>
             <Link
               class="social-icon-link youtube"
               to="/"
