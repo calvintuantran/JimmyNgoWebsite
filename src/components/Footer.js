@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
-import { Button } from "./Button";
 import { Link } from "react-router-dom";
+import Logo from "../images/JimmyNgoLogo.png";
 
 function Footer() {
   return (
@@ -55,7 +55,7 @@ function Footer() {
               <img
                 style={{ maxWidth: "100%", height: "auto" }}
                 alt="Logo"
-                src={"images/JimmyNgoLogo.PNG"}
+                src={Logo}
               />
             </Link>
           </div>

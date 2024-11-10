@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import Logo from "../images/JimmyNgoLogo.png"
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -32,7 +33,7 @@ function Navbar() {
             <img
               style={{ maxWidth: "100%", height: "auto" }} // Responsive scaling
               alt="Logo"
-              src={"images/JimmyNgoLogo.PNG"}
+              src={Logo}
             />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -46,7 +47,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/services"
+                to="/about"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -64,11 +65,11 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/products"
+                to="/staff"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Contact Us
+                Staff
               </Link>
             </li>
 
