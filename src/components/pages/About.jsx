@@ -2,10 +2,13 @@ import * as React from "react";
 
 // MUI
 import { Typography } from "@mui/material";
+import SchoolIcon from "@mui/icons-material/School";
 
 // Components
 import JimmyNgo from "../../images/JimmyNgoImage.jpg";
 import ListSection from "../Common/ListSection";
+import Office from "../../images/Office.jpg";
+import OfficeTwo from "../../images/Office2.jpg";
 
 const About = () => {
   return (
@@ -51,6 +54,7 @@ const About = () => {
               "Doctor of Dental Surgery (D.D.S.), University of California, Los Angeles (UCLA) School of Dentistry",
               "Postgraduate Residency in Orthodontics, New York University (NYU) College of Dentistry",
             ]}
+            Icon={SchoolIcon} // Pass the SchoolIcon here
           />
           <ListSection
             title="Certifications and Professional Memberships"
@@ -59,6 +63,7 @@ const About = () => {
               "Member of the California Dental Association (CDA)",
               "Member of the Pacific Coast Society of Orthodontists (PCSO)",
             ]}
+            Icon={SchoolIcon} // Pass the SchoolIcon here as well
           />
         </div>
       </div>
@@ -67,75 +72,26 @@ const About = () => {
           Values, Philosophy, and Principles
         </Typography>
         <div className="underline" />
+        <img
+          src={Office}
+          alt="Office"
+          className="image"
+        />
         <Typography sx={{ margin: "1rem 0" }}>
           Dr. Jimmy Vu Ngo’s approach to orthodontics is deeply rooted in a
           commitment to excellence, patient-centered care, and lifelong
           learning. His treatment philosophy is based on several core principles
           that guide his interactions with patients and his clinical practice.
         </Typography>
-        <Typography sx={{ margin: "1rem 0" }}>
-          <strong>Individualized Treatment Plans:</strong> Dr. Ngo believes in
-          creating customized treatment plans that cater to each patient's
-          unique needs and goals. He ensures that his patients are well-informed
-          about their treatment options so they can make confident decisions
-          regarding their dental care.
-        </Typography>
-        <Typography sx={{ margin: "1rem 0" }}>
-          <strong>Commitment to Excellence:</strong> Striving for the highest
-          standards in all aspects of orthodontic care, Dr. Ngo is dedicated to
-          continually evaluating and improving clinical practices. He embraces
-          the latest advancements in orthodontic techniques and technologies,
-          ensuring that his patients receive the most effective and modern
-          treatments available.
-        </Typography>
-        <Typography sx={{ margin: "1rem 0" }}>
-          <strong>Evidence-Based Practice:</strong> Dr. Ngo's treatment
-          approaches are firmly grounded in the latest scientific research and
-          clinical evidence. He actively engages in ongoing education and
-          training to keep his skills and knowledge up to date, allowing him to
-          provide cutting-edge care to his patients.
-        </Typography>
-        <Typography sx={{ margin: "1rem 0" }}>
-          <strong>Empathy and Compassion:</strong> Dr. Ngo understands the
-          importance of empathy in patient care. He strives to create a
-          supportive and caring environment where patients feel heard and
-          respected. By fostering trust through honesty, transparency, and
-          respect, he helps patients feel at ease throughout their orthodontic
-          journey.
-        </Typography>
-        <Typography sx={{ margin: "1rem 0" }}>
-          <strong>Ethical Practice:</strong> Adhering to the highest ethical
-          standards, Dr. Ngo ensures that all treatments are necessary and in
-          the best interest of the patient. He remains vigilant in protecting
-          patient privacy and confidentiality, prioritizing patient well-being
-          in every decision made.
-        </Typography>
-        <Typography sx={{ margin: "1rem 0" }}>
-          <strong>Effective Communication:</strong> Dr. Ngo prioritizes open,
-          clear communication with his patients. He encourages patients to ask
-          questions and express any concerns they may have throughout the
-          treatment process, fostering a collaborative environment where
-          patients feel fully involved in their care.
-        </Typography>
-        <Typography sx={{ margin: "1rem 0" }}>
-          <strong>Comprehensive Care:</strong> With a holistic approach to
-          orthodontics, Dr. Ngo collaborates closely with other dental and
-          medical professionals when necessary to provide comprehensive care. He
-          also offers long-term follow-up services to maintain the results of
-          his treatments, ensuring continued success beyond the initial
-          procedure.
-        </Typography>
-        <Typography sx={{ margin: "1rem 0" }}>
-          <strong>Technology and Innovation:</strong> Dr. Ngo is passionate
-          about utilizing the latest technology and innovative techniques to
-          improve treatment effectiveness and patient comfort. His
-          forward-thinking approach allows him to enhance both the efficiency of
-          treatments and the overall patient experience.
-        </Typography>
         <Typography variant="h4" className="title">
           Personal Interests
         </Typography>
         <div className="underline" />
+        <img
+          src={OfficeTwo}
+          alt="Office"
+          className="image"
+        />
         <Typography sx={{ margin: "1rem 0" }}>
           Dr. Ngo is not only a highly skilled orthodontist but also a
           well-rounded individual whose personal interests enrich his

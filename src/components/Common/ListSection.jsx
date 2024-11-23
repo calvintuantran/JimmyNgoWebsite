@@ -1,8 +1,14 @@
 import * as React from "react";
-import { Typography, List, ListItem, ListItemText, ListItemAvatar, Avatar } from "@mui/material";
-import SchoolIcon from "@mui/icons-material/School";
+import {
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemAvatar,
+  Avatar,
+} from "@mui/material";
 
-const ListSection = ({ title, items }) => (
+const ListSection = ({ title, items, Icon }) => (
   <div>
     <Typography className="title" variant="h4">
       {title}
@@ -13,7 +19,7 @@ const ListSection = ({ title, items }) => (
         <ListItem key={index}>
           <ListItemAvatar>
             <Avatar>
-              <SchoolIcon />
+              <Icon fontSize="small" />
             </Avatar>
           </ListItemAvatar>
           <ListItemText primary={item} />

@@ -3,9 +3,9 @@ import "./Cards.css";
 import CardItem from "./CardItem";
 
 // Images
-import Invisalign from "../images/Invasilgn .jpg";
-import ClearBraces from "../images/Clear braces.jpg";
-import MetalBraces from "../images/metal braces.jpg";
+import Invisalign from "../images/Invasilgn.jpg";
+import ClearBraces from "../images/ClearBraces.jpg";
+import MetalBraces from "../images/MetalBraces.jpg";
 
 // MUI
 import { Typography } from "@mui/material";
