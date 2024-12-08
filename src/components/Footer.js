@@ -10,14 +10,8 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">How it works</Link>
-            <Link to="/">Testimonials</Link>
-            <Link to="/">Terms of Service</Link>
-          </div>
-          <div class="footer-link-items">
-            <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
-            <Link to="/">Support</Link>
+            <Link to="/about">Dr. Jimmy Ngo</Link>
+            <Link to="/staff">Staff</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
@@ -29,7 +23,7 @@ function Footer() {
             <h2>Social Media</h2>
             <a
               className="social-icon-link"
-              href="https://www.instagram.com/jimmyngoorthodontist/"
+              href="https://www.instagram.com/jimmyngo.orthodontics/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Yelp"
@@ -71,7 +65,7 @@ function Footer() {
             </a>
             <a
               className="social-icon-link"
-              href="https://www.instagram.com/jimmyngoorthodontist/"
+              href="https://www.instagram.com/jimmyngo.orthodontics/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Yelp"

@@ -45,13 +45,13 @@ export default function Staff() {
             She looks forward to providing excellent and compassion care!
           </Typography>
           <ListSection
-            title="Education"
+            title="Education & Background"
             items={[
-              "Bachelor of Science (B.S.) in Biology, University of California, Irvine (UCI)",
-              "Doctor of Dental Surgery (D.D.S.), University of California, Los Angeles (UCLA) School of Dentistry",
-              "Postgraduate Residency in Orthodontics, New York University (NYU) College of Dentistry",
+              "Board-certified oral and maxillofacial surgeon with an MD degree from Harvard Medical School and a DDS from UCLA School of Dentistry.",
+              "Completed residency in Oral and Maxillofacial Surgery; previously served as Assistant Professor and Clinic Director at USC for 7 years.",
+              "Specializes in dentoalveolar surgery, implants, bone grafting, wisdom teeth surgery, orthognathic surgery, and facial trauma.",
             ]}
-            Icon={SchoolIcon} // Pass the SchoolIcon here
+            Icon={SchoolIcon}
           />
         </div>
       </div>
