@@ -13,10 +13,15 @@ import ListSection from "../Common/ListSection";
 import ServicesHero from "../pages/ServicesSection/ServicesHero";
 import BeforeAfterServices from "../pages/ServicesSection/BeforeAfterServices";
 import DentalOffice3DVideo2 from "../../videos/3DTeethVideo2.mp4";
+import { styled } from "@mui/material/styles";
 
 // Images
 import BeforeBite from "../../images/BeforeBite.jpeg";
 import AfterBite from "../../images/AfterBite.jpeg";
+import BicuspidsExtractionFinal from "../../images/BicuspidsExtractionFinal.jpeg";
+import BicuspidsExtractionInital from "../../images/BicuspidsExtractionInitial.jpeg";
+import PosteriorCrossbiteFinal from "../../images/PosteriorCrossbiteFinal.jpeg";
+import PosteriorCrossbiteInitial from "../../images/PosteriorCrossBiteInitial.jpeg";
 
 const cardData = [
   {
@@ -33,7 +38,59 @@ const cardData = [
       "Magnis proin himenaeos enim ultricies non adipiscing efficitur interdum lacus. Curabitur ornare orci facilisis in",
     authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/6.jpg" }],
   },
+  {
+    img: BicuspidsExtractionInital,
+    title: "Bicuspids Extraction Before",
+    description:
+      "Aenean euismod aliquam risus, nec fermentum ante faucibus eu. Duis non tristique quam.",
+    authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/2.jpg" }],
+  },
+  {
+    img: BicuspidsExtractionFinal,
+    title: "Bicuspids Extraction After",
+    description:
+      "Aenean euismod aliquam risus, nec fermentum ante faucibus eu. Duis non tristique quam.",
+    authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/3.jpg" }],
+  },
+  {
+    img: PosteriorCrossbiteInitial,
+    title: "Posterior Crossbite Before",
+    description:
+      "Aenean euismod aliquam risus, nec fermentum ante faucibus eu. Duis non tristique quam.",
+    authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/3.jpg" }],
+  },
+  {
+    img: PosteriorCrossbiteFinal,
+    title: "Posterior Crossbite After",
+    description:
+      "Aenean euismod aliquam risus, nec fermentum ante faucibus eu. Duis non tristique quam.",
+    authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/3.jpg" }],
+  },
 ];
+
+const StyledBox = styled("div")(({ theme }) => ({
+  alignSelf: "center",
+  width: "100%",
+  height: 400,
+  marginTop: theme.spacing(8),
+  borderRadius: (theme.vars || theme).shape.borderRadius,
+  outline: "6px solid",
+  outlineColor: "hsla(220, 25%, 80%, 0.2)",
+  border: "1px solid",
+  borderColor: (theme.vars || theme).palette.grey[200],
+  boxShadow: "0 0 12px 8px hsla(220, 25%, 80%, 0.2)",
+  position: "relative",
+  overflow: "hidden",
+  [theme.breakpoints.up("sm")]: {
+    marginTop: theme.spacing(10),
+    height: 700,
+  },
+  ...theme.applyStyles("dark", {
+    boxShadow: "0 0 24px 12px hsla(210, 100%, 25%, 0.2)",
+    outlineColor: "hsla(220, 20%, 42%, 0.1)",
+    borderColor: (theme.vars || theme).palette.grey[700],
+  }),
+}));
 
 export default function Services() {
   return (
@@ -49,6 +106,23 @@ export default function Services() {
           ]}
           Icon={() => <FontAwesomeIcon icon={faTooth} />}
         />
+        <StyledBox id="video-background">
+          <video
+            src={DentalOffice3DVideo2}
+            autoPlay
+            muted
+            loop
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              zIndex: -1,
+            }}
+          />
+        </StyledBox>
         <ListSection
           title="Comprehensive Orthodontic Treatment (Phase II)"
           items={[

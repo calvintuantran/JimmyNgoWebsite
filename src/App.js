@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./components/pages/About";
 import Services from "./components/pages/Services";
-import SignUp from "./components/pages/SignUp";
+import Staff from "./components/pages/Staff"
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
-          <Route path="/sign-up" component={SignUp} />
+          <Route path="/staff" component={Staff} />
         </Switch>
       </Router>
     </>
