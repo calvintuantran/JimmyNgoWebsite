@@ -8,8 +8,6 @@ import SchoolIcon from "@mui/icons-material/School";
 // Components
 import NatalieTung from "../../images/NatalieTungPhoto.png";
 import ListSection from "../Common/ListSection";
-import Office from "../../images/Office.jpg";
-import OfficeTwo from "../../images/Office2.jpg";
 
 export default function Staff() {
   return (
