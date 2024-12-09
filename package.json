@@ -13,7 +13,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "ajv": "^6.12.6",
+    "ajv": "^8.17.1",
     "ajv-keywords": "^2.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
