@@ -22,48 +22,64 @@ import BicuspidsExtractionFinal from "../../images/BicuspidsExtractionFinal.jpeg
 import BicuspidsExtractionInital from "../../images/BicuspidsExtractionInitial.jpeg";
 import PosteriorCrossbiteFinal from "../../images/PosteriorCrossbiteFinal.jpeg";
 import PosteriorCrossbiteInitial from "../../images/PosteriorCrossBiteInitial.jpeg";
+import ClassInitalPhoto from "../../images/ClassInitialPhoto.jpeg"
+import ClassFinalPhoto from "../../images/ClassFinalPhoto.jpeg"
 
 const cardData = [
   {
     img: BeforeBite,
     title: "Anterior Crossbite Before",
     description:
-      "Magnis proin himenaeos enim ultricies non adipiscing efficitur interdum lacus. Curabitur ornare orci facilisis in",
+      "Diagnosis-Severe underbite, significant crowding, and misaligned teeth, with the upper left canine blocked out.",
     authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/1.jpg" }],
   },
   {
     img: AfterBite,
     title: "Anterior Crossbite After",
     description:
-      "Magnis proin himenaeos enim ultricies non adipiscing efficitur interdum lacus. Curabitur ornare orci facilisis in",
+      "End Treatment Outcome-The underbite (crossbite) has been corrected, teeth are perfectly aligned, and the upper left canine is properly positioned.",
     authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/6.jpg" }],
   },
   {
     img: BicuspidsExtractionInital,
     title: "Bicuspids Extraction Before",
     description:
-      "Aenean euismod aliquam risus, nec fermentum ante faucibus eu. Duis non tristique quam.",
+      "Diagnosis: Severe crowding, midline deviation, and crossbite (misalignment causing incorrect bite on the front teeth).",
     authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/2.jpg" }],
   },
   {
     img: BicuspidsExtractionFinal,
     title: "Bicuspids Extraction After",
     description:
-      "Aenean euismod aliquam risus, nec fermentum ante faucibus eu. Duis non tristique quam.",
+    "End Treatment Outcome: Teeth were perfectly aligned, midline deviations were corrected, and the crossbite was resolved.",
+    authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/3.jpg" }],
+  },
+  {
+    img: ClassInitalPhoto,
+    title: "Class II Overjet Before",
+    description:
+      "Diagnosis: Significant overjet and severe proclination of the upper front teeth, with end-to-end canine relationships and pronounced crowding in the lower arch.",
+    authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/2.jpg" }],
+  },
+  {
+    img: ClassFinalPhoto,
+    title: "Class II Overjet After",
+    description:
+    "End Treatment Outcome: A proper overbite was achieved, and the upper front teeth were aligned and retroclined to their ideal positions.",
     authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/3.jpg" }],
   },
   {
     img: PosteriorCrossbiteInitial,
     title: "Posterior Crossbite Before",
     description:
-      "Aenean euismod aliquam risus, nec fermentum ante faucibus eu. Duis non tristique quam.",
+      "Diagnosis:Severe crowding & crooked teeth. Midline deviations. Severe underbite. Constricted upper jaw.",
     authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/3.jpg" }],
   },
   {
     img: PosteriorCrossbiteFinal,
     title: "Posterior Crossbite After",
     description:
-      "Aenean euismod aliquam risus, nec fermentum ante faucibus eu. Duis non tristique quam.",
+      "End Treatment Outcome:The teeth are now perfectly aligned, with midline deviations and underbite successfully corrected. The upper jaw has been widened and properly adjusted.",
     authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/3.jpg" }],
   },
 ];

@@ -6,6 +6,7 @@ import CardItem from "./CardItem";
 import Invisalign from "../images/Invasilgn.jpg";
 import ClearBraces from "../images/ClearBraces.jpg";
 import MetalBraces from "../images/MetalBraces.jpg";
+import StaffPicture from "../images/Staff_Picture.jpg";
 
 // MUI
 import { Typography } from "@mui/material";
@@ -19,6 +20,9 @@ function Cards() {
             Welcome to Jimmy Vu Ngo D.D.S., Inc.
           </Typography>
           <div className="underline" />
+          <div className="staff-picture-container">
+            <img src={StaffPicture} alt="Main Staff" className="staff-picture" />
+          </div>
           <Typography sx={{ margin: "1rem 0" }}>
             We are committed to providing exceptional orthodontic care for
             patients of all ages in a warm and relaxing environment. With over

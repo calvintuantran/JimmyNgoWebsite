@@ -50,7 +50,6 @@ function Author({ authors }) {
         </AvatarGroup>
         <Typography variant="caption">{authors.map((author) => author.name).join(", ")}</Typography>
       </Box>
-      <Typography variant="caption">July 14, 2021</Typography>
     </Box>
   );
 }
