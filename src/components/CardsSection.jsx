@@ -1,11 +1,7 @@
 import React from "react";
 import "./Cards.css";
-import CardItem from "./CardItem";
 
 // Images
-import Invisalign from "../images/Invasilgn.jpg";
-import ClearBraces from "../images/ClearBraces.jpg";
-import MetalBraces from "../images/MetalBraces.jpg";
 import StaffPicture from "../images/Staff_Picture.jpg";
 
 // MUI
@@ -45,52 +41,6 @@ function Cards() {
             treatment, or advanced techniques like Invisalign, our practice is
             here to help you achieve your best smile.
           </Typography>
-        </div>
-        <Typography className="title" variant="h4">
-          Check out our Services!
-        </Typography>
-        <div className="underline" />
-        <div className="cards__container">
-          <div className="cards__wrapper">
-            <ul className="cards__items">
-              <CardItem
-                text="Protruding and Retruding Teeth: Adjusting teeth that extend outward or are positioned too far
-back for better dental harmony."
-                label="Services"
-                path="/services"
-                src={MetalBraces}
-              />
-              <CardItem
-                text="Bite Issues: Treating crossbites, open bites, overbites, and midline discrepancies for a balanced
-bite."
-                label="Services"
-                path="/services"
-                src={ClearBraces}
-              />
-            </ul>
-            <ul className="cards__items">
-              <CardItem
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                label="Services"
-                path="/services"
-                src={MetalBraces}
-              />
-              <CardItem
-                text="Offering clear aligner therapy as an alternative to traditional braces,
-Invisalign uses custom-made, removable aligners to gradually move teeth into their correct
-positions. Invisalign is ideal for patients who are seeking a more discreet treatment option."
-                label="Services"
-                path="/products"
-                src={Invisalign}
-              />
-              <CardItem
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                label="Services"
-                path="/sign-up"
-                src={MetalBraces}
-              />
-            </ul>
-          </div>
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 import SchoolIcon from "@mui/icons-material/School";
 
 // Components
-import NatalieTung from "../../images/NatalieTungPhoto.png";
+import NataliePhoto from "../../images/NataliePhoto.jpeg"
 import ListSection from "../Common/ListSection";
 
 export default function Staff() {
@@ -14,7 +14,7 @@ export default function Staff() {
     <>
       <div className="twocolumnContainer">
         <div className="centerContent">
-          <img src={NatalieTung} alt="Jimmy Ngo" className="about_photo" />
+          <img src={NataliePhoto} alt="Jimmy Ngo" className="about_photo" />
         </div>
         <div>
           <Typography className="title" variant="h4">

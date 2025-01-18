@@ -17,7 +17,11 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>Services</h2>
-            <Link to="/">To DO</Link>
+            <Link to="/services">Braces</Link>
+            <Link to="/services">Clear Aligners</Link>
+            <Link to="/services">Retainers</Link>
+            <Link to="/services">Early Orthodontic</Link>            
+            <Link to="/services">Corrective Jaw Treatments</Link>
           </div>
           <div class="footer-link-items">
             <h2>Social Media</h2>
