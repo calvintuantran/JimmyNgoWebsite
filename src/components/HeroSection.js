@@ -11,7 +11,7 @@ function HeroSection() {
       <div className="hero-btns">
         <Button
           className="btns"
-          buttonStyle="btn--outline"
+          buttonStyle="btn--primary"
           buttonSize="btn--large"
         >
           About Us
@@ -28,6 +28,32 @@ function HeroSection() {
           }
         >
           Open Maps <i className="far fa-map" />
+        </Button>
+        <Button
+          className="btns"
+          buttonStyle="btn--primary"
+          buttonSize="btn--large"
+          onClick={() =>
+            window.open(
+              "https://www.instagram.com/jimmyngo.orthodontics/",
+              "_blank"
+            )
+          }
+        >
+          Instagram <i class="fab fa-instagram" />
+        </Button>
+        <Button
+          className="btns"
+          buttonStyle="btn--primary"
+          buttonSize="btn--large"
+          onClick={() =>
+            window.open(
+              "https://www.yelp.com/biz/jimmy-vu-ngo-dds-garden-grove",
+              "_blank"
+            )
+          }
+        >
+          Yelp <i class="fab fa-yelp" />
         </Button>
       </div>
     </div>

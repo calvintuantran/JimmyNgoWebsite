@@ -49,7 +49,7 @@ function Footer() {
       <section class="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            <Link to="/" className="navbar-logo">
+            <Link to="/" >
               <img
                 style={{ maxWidth: "100%", height: "auto" }}
                 alt="Logo"

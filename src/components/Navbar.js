@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import Logo from "../images/JimmyNgoLogo.png"
+import Logo from "../images/JimmyNgoLogo.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -21,36 +21,43 @@ function Navbar() {
 
   useEffect(() => {
     showButton();
+    window.addEventListener("resize", showButton);
+    return () => window.removeEventListener("resize", showButton);
   }, []);
-
-  window.addEventListener("resize", showButton);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <img
-              style={{ maxWidth: "100%", height: "auto" }} // Responsive scaling
-              alt="Logo"
-              src={Logo}
-            />
-          </Link>
+          {button && (
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              <img
+                style={{ maxWidth: "100%", height: "auto" }}
+                alt="Logo"
+                src={Logo}
+              />
+            </Link>
+          )}
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+            {!button && (
+              <li className="nav-item">
+                <img
+                  style={{ maxWidth: "100%", height: "auto" }}
+                  alt="Logo"
+                  src={Logo}
+                />
+              </li>
+            )}
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/about"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
                 About Dr. Ngo
               </Link>
             </li>
@@ -64,15 +71,10 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/staff"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <Link to="/staff" className="nav-links" onClick={closeMobileMenu}>
                 Staff
               </Link>
             </li>
-
             <li>
               <div className="nav-links-mobile">Call (714) 530-8577</div>
             </li>
