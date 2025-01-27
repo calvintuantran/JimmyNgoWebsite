@@ -75,6 +75,11 @@ function Navbar() {
                 Staff
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/promotions" className="nav-links" onClick={closeMobileMenu}>
+                Promotions & Rewards
+              </Link>
+            </li>
             <li>
               <div className="nav-links-mobile">Call (714) 530-8577</div>
             </li>
