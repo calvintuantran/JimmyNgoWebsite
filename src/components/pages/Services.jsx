@@ -22,8 +22,9 @@ import BicuspidsExtractionFinal from "../../images/BicuspidsExtractionFinal.jpeg
 import BicuspidsExtractionInital from "../../images/BicuspidsExtractionInitial.jpeg";
 import PosteriorCrossbiteFinal from "../../images/PosteriorCrossbiteFinal.jpeg";
 import PosteriorCrossbiteInitial from "../../images/PosteriorCrossBiteInitial.jpeg";
-import ClassInitalPhoto from "../../images/ClassInitialPhoto.jpeg"
-import ClassFinalPhoto from "../../images/ClassFinalPhoto.jpeg"
+import ClassInitalPhoto from "../../images/ClassInitialPhoto.jpeg";
+import ClassFinalPhoto from "../../images/ClassFinalPhoto.jpeg";
+import InvsalignCase from "../../videos/InvsalignCase.mov";
 
 const cardData = [
   {
@@ -51,7 +52,7 @@ const cardData = [
     img: BicuspidsExtractionFinal,
     title: "Bicuspids Extraction After",
     description:
-    "End Treatment Outcome: Teeth were perfectly aligned, midline deviations were corrected, and the crossbite was resolved.",
+      "End Treatment Outcome: Teeth were perfectly aligned, midline deviations were corrected, and the crossbite was resolved.",
     authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/3.jpg" }],
   },
   {
@@ -65,7 +66,7 @@ const cardData = [
     img: ClassFinalPhoto,
     title: "Class II Overjet After",
     description:
-    "End Treatment Outcome: A proper overbite was achieved, and the upper front teeth were aligned and retroclined to their ideal positions.",
+      "End Treatment Outcome: A proper overbite was achieved, and the upper front teeth were aligned and retroclined to their ideal positions.",
     authors: [{ name: "Jimmy Ngo", avatar: "/static/images/avatar/3.jpg" }],
   },
   {
@@ -150,6 +151,32 @@ export default function Services() {
             "TMJ Dysfunction: Alleviating pain and improving jaw function for those with temporomandibular joint disorders.",
             "Pre-Implant and Surgical Care: Preparing teeth for dental implants, crown/bridge work, or orthognathic surgery for severe jaw deformities.",
             "Invisalign Treatment: Offering clear aligner therapy as an alternative to traditional braces, Invisalign uses custom-made, removable aligners to gradually move teeth into their correct positions. Invisalign is ideal for patients who are seeking a more discreet treatment option.",
+          ]}
+          Icon={() => <FontAwesomeIcon icon={faTooth} />}
+        />
+        <StyledBox id="video-background">
+          <video
+            src={InvsalignCase}
+            autoPlay
+            muted
+            loop
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              zIndex: -1,
+            }}
+          />
+        </StyledBox>
+        <ListSection
+          title="Extraction Using Invisalign"
+          items={[
+            "Initial Diagnosis: Posterior and anterior cross bite, severe anterior crowding, with the lower midline deviated to the patient’s right.",
+            "Treatment Plan: Extraction of the lower left first premolar, followed by Invisalign 18-24months",
+            "Final outcome: all teeth are properly aligned and the midline has been corrected.",
           ]}
           Icon={() => <FontAwesomeIcon icon={faTooth} />}
         />
