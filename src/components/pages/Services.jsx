@@ -109,6 +109,21 @@ const StyledBox = styled("div")(({ theme }) => ({
   }),
 }));
 
+const formatText = (text) => {
+  const parts = text.split(":");
+  if (parts.length > 1) {
+    return (
+      <>
+        <span style={{ fontWeight: "bold", fontStyle: "italic" }}>
+          {parts[0]}:
+        </span>
+        {parts.slice(1).join(":")}
+      </>
+    );
+  }
+  return text;
+};
+
 export default function Services() {
   return (
     <>
@@ -117,12 +132,19 @@ export default function Services() {
         <ListSection
           title="Early Treatment (Phase I: Prevention Treatment)"
           items={[
-            "Preventing Unnecessary Tooth Removal: Addressing crowding by regaining space early to avoid the need for permanent tooth extractions.",
-            "Correcting Jaw Disproportions: Treating overbites, underbites, and asymmetries to ensure proper jaw function.",
-            "Protecting Protruded Front Teeth: Preventing injury and addressing harmful habits to safeguard tooth development.",
+            formatText(
+              "Preventing Unnecessary Tooth Removal: Addressing crowding by regaining space early to avoid the need for permanent tooth extractions."
+            ),
+            formatText(
+              "Correcting Jaw Disproportions: Treating overbites, underbites, and asymmetries to ensure proper jaw function."
+            ),
+            formatText(
+              "Protecting Protruded Front Teeth: Preventing injury and addressing harmful habits to safeguard tooth development."
+            ),
           ]}
           Icon={() => <FontAwesomeIcon icon={faTooth} />}
         />
+
         <StyledBox id="video-background">
           <video
             src={DentalOffice3DVideo2}
@@ -143,17 +165,34 @@ export default function Services() {
         <ListSection
           title="Comprehensive Orthodontic Treatment (Phase II)"
           items={[
-            "Crowding and Spacing: Correcting overlapping or gapped teeth for improved alignment and appearance.",
-            "Protruding and Retruding Teeth: Adjusting teeth that extend outward or are positioned too far back for better dental harmony.",
-            "Missing and Impacted Teeth: Managing missing or unerupted teeth to ensure proper dental function.",
-            "Bite Issues: Treating crossbites, open bites, overbites, and midline discrepancies for a balanced bite.",
-            "Jaw and Facial Growth Problems: Monitoring and correcting jaw misalignments and facial growth discrepancies.",
-            "TMJ Dysfunction: Alleviating pain and improving jaw function for those with temporomandibular joint disorders.",
-            "Pre-Implant and Surgical Care: Preparing teeth for dental implants, crown/bridge work, or orthognathic surgery for severe jaw deformities.",
-            "Invisalign Treatment: Offering clear aligner therapy as an alternative to traditional braces, Invisalign uses custom-made, removable aligners to gradually move teeth into their correct positions. Invisalign is ideal for patients who are seeking a more discreet treatment option.",
+            formatText(
+              "Crowding and Spacing: Correcting overlapping or gapped teeth for improved alignment and appearance."
+            ),
+            formatText(
+              "Protruding and Retruding Teeth: Adjusting teeth that extend outward or are positioned too far back for better dental harmony."
+            ),
+            formatText(
+              "Missing and Impacted Teeth: Managing missing or unerupted teeth to ensure proper dental function."
+            ),
+            formatText(
+              "Bite Issues: Treating crossbites, open bites, overbites, and midline discrepancies for a balanced bite."
+            ),
+            formatText(
+              "Jaw and Facial Growth Problems: Monitoring and correcting jaw misalignments and facial growth discrepancies."
+            ),
+            formatText(
+              "TMJ Dysfunction: Alleviating pain and improving jaw function for those with temporomandibular joint disorders."
+            ),
+            formatText(
+              "Pre-Implant and Surgical Care: Preparing teeth for dental implants, crown/bridge work, or orthognathic surgery for severe jaw deformities."
+            ),
+            formatText(
+              "Invisalign Treatment: Offering clear aligner therapy as an alternative to traditional braces, Invisalign uses custom-made, removable aligners to gradually move teeth into their correct positions. Invisalign is ideal for patients who are seeking a more discreet treatment option."
+            ),
           ]}
           Icon={() => <FontAwesomeIcon icon={faTooth} />}
         />
+
         <StyledBox id="video-background">
           <video
             src={InvsalignCase}
@@ -174,9 +213,15 @@ export default function Services() {
         <ListSection
           title="Extraction Using Invisalign"
           items={[
-            "Initial Diagnosis: Posterior and anterior cross bite, severe anterior crowding, with the lower midline deviated to the patient’s right.",
-            "Treatment Plan: Extraction of the lower left first premolar, followed by Invisalign 18-24months",
-            "Final outcome: all teeth are properly aligned and the midline has been corrected.",
+            formatText(
+              "Initial Diagnosis: Posterior and anterior cross bite, severe anterior crowding, with the lower midline deviated to the patient’s right."
+            ),
+            formatText(
+              "Treatment Plan: Extraction of the lower left first premolar, followed by Invisalign 18-24 months."
+            ),
+            formatText(
+              "Final outcome: All teeth are properly aligned and the midline has been corrected."
+            ),
           ]}
           Icon={() => <FontAwesomeIcon icon={faTooth} />}
         />

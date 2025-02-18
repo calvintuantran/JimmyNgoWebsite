@@ -90,6 +90,7 @@ function Navbar() {
               buttonStyle="btn--outline"
             >
               Call (714) 530-8577
+              drjimmyngo@gmail.com
             </Button>
           )}
         </div>
