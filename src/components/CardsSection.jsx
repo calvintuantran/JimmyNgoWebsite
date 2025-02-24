@@ -22,7 +22,7 @@ function Cards() {
           <Typography sx={{ margin: "1rem 0" }}>
             We are committed to providing exceptional orthodontic care for
             patients of all ages in a warm and relaxing environment. With over
-            24 years of experience, Dr. Ngo believes in the transformative power
+            25 years of experience, Dr. Ngo believes in the transformative power
             of a beautiful smile and strives to help every patient "Smile With
             Confidence." His expertise in orthodontics has crafted countless
             stunning smiles, enhancing self-esteem and overall well-being.

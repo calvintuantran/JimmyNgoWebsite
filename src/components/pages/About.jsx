@@ -24,7 +24,7 @@ const About = () => {
           <div className="underline" />
           <Typography sx={{ margin: "1rem 0" }}>
             Dr. Jimmy Vu Ngo is a highly experienced and board-eligible
-            orthodontist with a distinguished career spanning over 24 years in
+            orthodontist with a distinguished career spanning over 25 years in
             the field of orthodontics. He earned his Doctor of Dental Surgery
             (D.D.S.) degree from the prestigious University of California, Los
             Angeles (UCLA) School of Dentistry, where he gained extensive

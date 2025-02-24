@@ -11,7 +11,7 @@ function Footer() {
           <div class="footer-link-items">
             <h2>About Us</h2>
             <Link to="/about">Dr. Jimmy Ngo</Link>
-            <Link to="/staff">Associate Dr.</Link>
+            <Link to="/staff">Associate Doctor</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">

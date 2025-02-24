@@ -72,7 +72,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link to="/staff" className="nav-links" onClick={closeMobileMenu}>
-                Associate Dr.
+                Associate Doctor
               </Link>
             </li>
             <li className="nav-item">
